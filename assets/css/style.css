@@ -1,0 +1,114 @@
+body {
+    background-color: steelblue;
+    text-align: center;
+}
+
+first {
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+    text-align: center;
+    font-family:serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: darkorange;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+button {
+    background-color: lightgray;
+    color: black;
+    padding: 3px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+textarea {
+    display: inline-block;
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+input {
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.gumb {
+    display: inline;
+    background-color: lightgray;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    margin: 0 5px 0 5px;
+}
+
+.gumb > a:visited {
+    color: black;
+}
+
+button {
+    text-align: center;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+.podatki {
+    margin-bottom: 30px;
+}
+
+.top > a {
+    text-align: center;
+    padding: 0 15px 0 15px;
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.top > a:visited {
+    color: white;
+}
+
+.seznam {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+

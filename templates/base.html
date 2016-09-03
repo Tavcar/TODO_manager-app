@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Dodaj task{% endblock title %}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Task manager</h1>
+    
+{% block specifika %}
+
+    <h3>Seznam neopravljenih taskov:</h3>
+
+    <div class="seznam">
+    {% for sporocilo in seznam1 %}
+        <p><a href="/task/{{ sporocilo.key.id() }}">{{ sporocilo.vnos }}</a></p>
+    {% endfor %}
+
+    </div>
+
+
+    <h3>Seznam opravljenih taskov:</h3>
+
+    <div class="seznam">
+    {% for sporocilo in seznam %}
+        <p><a href="/task/{{ sporocilo.key.id() }}">{{ sporocilo.vnos }}</a></p>
+    {% endfor %}
+    </div>
+
+
+    <h3>Dodaj nov task</h3>
+
+    <form action="/" method="post">
+        <textarea name="vnos" required></textarea>
+        <br>
+        <button type="submit">Dodaj</button>
+
+    </form>
+
+{% endblock specifika %}
+
+</body>
+</html>

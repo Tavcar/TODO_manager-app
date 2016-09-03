@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Status task-a{% endblock title %}
+
+{% block specifika %}
+
+    <h3>Status task-a</h3>
+
+    <form action="/task/{{ sporocilo.key.id() }}/status" method="post">
+        <button type="submit" name="vnos" value="1">Opravljen</button>
+    </form>
+    <br>
+    <form action="/task/{{ sporocilo.key.id() }}/status" method="post">
+        <button type="submit" name="vnos" value="2">Neopravljen</button>
+    </form>
+
+
+{% endblock specifika %}

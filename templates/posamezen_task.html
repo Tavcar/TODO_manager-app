@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Task{% endblock title %}
+
+{% block specifika %}
+
+    <h3>Task</h3>
+
+    <div class="podatki">
+    <p>Task: {{ sporocilo.vnos }}</p>
+    <p>Opravljeno: {{ sporocilo.status }}</p>
+    <p>Datum: {{ sporocilo.nastanek }}</p>
+    </div>
+
+    <div class="gumb">
+    <a href="/task/{{ sporocilo.key.id() }}/uredi">Uredi</a>
+    </div>
+    <div class="gumb">
+    <a href="/task/{{ sporocilo.key.id() }}/izbrisi">Izbriši</a>
+    </div>
+    <div class="gumb">
+    <a href="/task/{{ sporocilo.key.id() }}/status">Status</a>
+    </div>
+
+
+{% endblock specifika %}

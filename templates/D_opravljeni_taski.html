@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Seznam opravljenih taskov{% endblock title %}
+
+{% block specifika %}
+
+    <h1>Seznam opravljenih taskov</h1>
+
+    {% for sporocilo in seznam %}
+        <p><a href="/task/{{ sporocilo.key.id() }}">{{ sporocilo.vnos }}, {{ sporocilo.status }}</a></p>
+    {% endfor %}
+
+{% endblock specifika %}

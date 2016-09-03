@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Uredi task{% endblock title %}
+
+{% block specifika %}
+
+    <h3>Urejanje task-a</h3>
+
+    <form action="/task/{{ sporocilo.key.id() }}/uredi" method="post">
+            <textarea name="vnos" required>{{ sporocilo.vnos }}</textarea>
+            <br>
+            <button type="submit">Potrdi</button>
+    </form>
+
+{% endblock specifika %}
